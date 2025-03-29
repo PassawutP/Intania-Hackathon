@@ -1,10 +1,10 @@
+import { AppBar, Avatar, Box, IconButton, Toolbar, Typography } from '@mui/material';
 import React from 'react';
-import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
-import Home from './pages/Home';
-import { AppBar, Toolbar, Typography, Box, IconButton, Avatar } from '@mui/material';
-import { useNavigate } from 'react-router-dom';
-import Lobby from './pages/Lobby';
+import { Link, Route, BrowserRouter as Router, Routes, useNavigate } from 'react-router-dom';
 import Game from './pages/Game';
+import Home from './pages/Home';
+import Lobby from './pages/Lobby';
+import Result from './pages/Result';
 
 const App: React.FC = () => {
   const navigate = useNavigate();
@@ -12,7 +12,7 @@ const App: React.FC = () => {
   return (
     <div className="App">
       <React.Fragment>
-        <AppBar position="fixed" sx={{ backgroundColor: 'white', color: 'black', height: '10vh'}}>
+        <AppBar position="fixed" sx={{ backgroundColor: 'white', color: 'black', height: '10vh' }}>
           <Toolbar sx={{ display: 'flex', justifyContent: 'space-between' }}>
             <Box sx={{ display: 'flex', alignItems: 'center' }}>
               <Typography variant="h6" sx={{ marginRight: 5, fontWeight: 'bold' }}>
@@ -39,6 +39,7 @@ const App: React.FC = () => {
         <Route path="/" element={<Home />} />
         <Route path="/lobby" element={<Lobby />} />
         <Route path="/game" element={<Game />} />
+        <Route path="/result" element={<Result />} />
       </Routes>
     </div>
   );
