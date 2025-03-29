@@ -6,8 +6,6 @@ import imageDefault from '../assets/images/image-default.png';
 import imagePlaceholder from '../assets/images/place-holder.png';
 
 const Game: React.FC = () => {
-    const navigate = useNavigate();
-
     return (
         <div style={{ display: 'flex', flexDirection: 'column', height: '90vh' }}>
             <div style={{ flex: 1 }}>
@@ -26,8 +24,8 @@ const Game: React.FC = () => {
                             />
                         </div>
                         <div style={{ display: 'flex', gap: 20 }}>
-                            <Button variant="outlined">Confirm</Button>
-                            <Button variant="outlined" onClick={() => navigate("/result")}>Submit</Button>
+                            <Button variant="outlined">Test Prompt (max 2 tries)</Button>
+                            <Button variant="outlined">Submit</Button>
                         </div>
                         <hr style={{ border: '1px solid black', margin: '20px 0' }} />
                         <div style={{ width: '150px', height: '150px' }}>
@@ -49,7 +47,7 @@ const Game: React.FC = () => {
                             />
                         </div>
                         <div style={{ display: 'flex', gap: 20 }}>
-                            <Button variant="outlined">Confirm</Button>
+                            <Button variant="outlined">Test Prompt (max 2 tries)</Button>
                             <Button variant="outlined">Submit</Button>
                         </div>
                         <hr style={{ border: '1px solid black', margin: '20px 0' }} />

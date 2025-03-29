@@ -12,7 +12,7 @@ const App: React.FC = () => {
   return (
     <div className="App">
       <React.Fragment>
-        <AppBar position="fixed" sx={{ backgroundColor: 'white', color: 'black', height: '10vh' }}>
+        <AppBar position="fixed" sx={{ backgroundColor: 'white', color: 'black', height: '6vh' }}>
           <Toolbar sx={{ display: 'flex', justifyContent: 'space-between' }}>
             <Box sx={{ display: 'flex', alignItems: 'center' }}>
               <Typography variant="h6" sx={{ marginRight: 5, fontWeight: 'bold' }}>
