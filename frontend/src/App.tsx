@@ -1,9 +1,9 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 import Home from './pages/Home';
-import About from './pages/About';
 import { AppBar, Toolbar, Typography, Box, IconButton, Avatar } from '@mui/material';
 import { useNavigate } from 'react-router-dom';
+import Lobby from './pages/Lobby';
 
 const App: React.FC = () => {
   const navigate = useNavigate();
@@ -21,8 +21,8 @@ const App: React.FC = () => {
                 <Link to="/" style={{ textDecoration: 'none', color: 'black' }}>
                   <Typography variant="body1">Home</Typography>
                 </Link>
-                <Link to="/about" style={{ textDecoration: 'none', color: 'black' }}>
-                  <Typography variant="body1">About</Typography>
+                <Link to="/lobby" style={{ textDecoration: 'none', color: 'black' }}>
+                  <Typography variant="body1">Lobby</Typography>
                 </Link>
               </Box>
             </Box>
@@ -36,7 +36,7 @@ const App: React.FC = () => {
 
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/about" element={<About />} />
+        <Route path="/lobby" element={<Lobby />} />
       </Routes>
     </div>
   );
