@@ -4,12 +4,12 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-  "start": "node dist/index.js",
-  "dev": "ts-node src/index.ts",
-  "build": "tsc",
-  "watch": "tsc --watch",
-  "lint": "eslint . --ext .ts",
-  "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node dist/index.js",
+    "dev": "ts-node-dev --respawn --transpile-only src/index.ts",
+    "build": "tsc",
+    "watch": "tsc --watch",
+    "lint": "eslint . --ext .ts",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
   "author": "",
@@ -17,12 +17,14 @@
   "dependencies": {
     "dotenv": "^16.4.7",
     "express": "^4.21.2",
-    "mysql2": "^3.14.0"
+    "mysql2": "^3.14.0",
+    "openai": "^4.90.0"
   },
   "devDependencies": {
     "@types/express": "^5.0.1",
     "@types/node": "^22.13.14",
     "ts-node": "^10.9.2",
+    "ts-node-dev": "^2.0.0",
     "typescript": "^5.8.2"
   }
 }
