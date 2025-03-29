@@ -36,17 +36,6 @@ app.use(express.json())
 //   console.log('Connected to MySQL as ID ' + db.threadId);
 // });
 
-
-
-// Example usage:
-// const imagePath = path.join(__dirname, "assets", "bev_logo.png");
-// const textPrompts = [
-//   "I am a graphic designer designing a logo for my company that is selling beverages can you generate an image showing a lady laying down on the beach drinking beverages and showing the brand near the screen", 
-//   "Beverage logo showing a lady laying down on the beach drinking beverages and showing the brand near the screen",
-//   "Beverage logo"
-// ];
-
-
 app.get('/', (req: Request, res: Response) => {
   res.send('Hello, Express with TypeScript!');
 });
@@ -70,7 +59,7 @@ app.post('/api/prompts', async (req: Request, res: Response) =>{
   const scoreData: scoreDatum[] | number = await getSimilarity(image, [prompt1, prompt2]);
 
   if (typeof scoreData == "number"){
-    res.status(scoreData);
+    res.status(scoreData).json({});
     return
   }
 

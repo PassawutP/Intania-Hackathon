@@ -9,10 +9,10 @@ const openaiClient = new OpenAI();
 export async function generateImage(prompt: string) {
   try {
     const response = await openaiClient.images.generate({
-      model: "dall-e-2",
+      model: "dall-e-3",
       prompt: prompt,
       n: 1,
-      size: "512x512" // or "256x256", "1024x1024"
+      size: "1024x1024"
     });
 
     const imageUrl = response.data[0].url;
