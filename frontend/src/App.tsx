@@ -4,6 +4,7 @@ import Home from './pages/Home';
 import { AppBar, Toolbar, Typography, Box, IconButton, Avatar } from '@mui/material';
 import { useNavigate } from 'react-router-dom';
 import Lobby from './pages/Lobby';
+import Game from './pages/Game';
 
 const App: React.FC = () => {
   const navigate = useNavigate();
@@ -37,6 +38,7 @@ const App: React.FC = () => {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/lobby" element={<Lobby />} />
+        <Route path="/game" element={<Game />} />
       </Routes>
     </div>
   );
