@@ -23,7 +23,7 @@ const Game: React.FC = () => {
                         />
                     </div>
                     <div style={{ display: 'flex', gap: 20 }}>
-                        <Button variant="outlined">Confirm</Button>
+                        <Button variant="outlined">Test Prompt (max 2 tries)</Button>
                         <Button variant="outlined">Submit</Button>
                     </div>
                     <hr style={{ border: '1px solid black', margin: '20px 0' }} />
@@ -46,7 +46,7 @@ const Game: React.FC = () => {
                         />
                     </div>
                     <div style={{ display: 'flex', gap: 20 }}>
-                        <Button variant="outlined">Confirm</Button>
+                        <Button variant="outlined">Test Prompt (max 2 tries)</Button>
                         <Button variant="outlined">Submit</Button>
                     </div>
                     <hr style={{ border: '1px solid black', margin: '20px 0' }} />
