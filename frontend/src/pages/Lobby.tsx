@@ -7,8 +7,8 @@ const Lobby: React.FC = () => {
   const navigate = useNavigate();
 
   return (
-    <div style={{ display: 'flex', flexDirection: 'column', height: '100vh' }}>
-        <Box sx={{ width: '70%', height: '70%', margin: 'auto', marginTop: 20, borderRadius: 5, color: 'black', border:"2px solid black" }}>
+    <div style={{ display: 'flex', flexDirection: 'column', height: '90vh' }}>
+        <Box sx={{ width: '70%', height: '70%', margin: 'auto', marginTop: 10, borderRadius: 5, color: 'black', border:"2px solid black" }}>
           <div style={{ paddingLeft: 20 }}>
             <h2>Lobby Page</h2>
             <p>Welcome to the Lobby page!</p>
